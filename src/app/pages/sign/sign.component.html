@@ -1,1 +1,58 @@
-<p>sign works!</p>
+<div class="entete">
+    <form class="bank-form">
+        <h2>Formulaire d'inscription</h2>
+        <div class="iner">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+
+        <div class="iner">
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+
+        <div class="iner">
+          <label for="dateNaissance">Date de Naissance :</label>
+          <input type="date" id="dateNaissance" name="dateNaissance" required>
+        </div>
+
+        <div class="iner">
+          <label for="sexe">Sexe :</label>
+          <select id="sexe" name="sexe" required>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+          </select>
+        </div>
+
+        <div class="iner">
+          <label for="adresse">adresse :</label>
+          <input type="text" id="adresse" name="adresse" required>
+        </div>
+
+        <div class="iner">
+          <label for="tel">Tel :</label>
+          <input type="number" id="tel" name="tel" required>
+        </div>
+
+        <div class="iner">
+          <label for="email">Courriel :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="iner">
+          <label for="nationalite">Nationalite :</label>
+          <input type="text" id="nationalite" name="nationalite" required>
+        </div>
+
+
+        <div>
+          <label for="typeCompte">Type de Compte :</label>
+          <select id="typeCompte" name="typeCompte" required>
+            <option value="epargne">Compte Épargne</option>
+            <option value="courant">Compte Courant</option>
+          </select>
+        </div>
+  
+        <button type="submit">Valider</button>
+      </form>
+</div>
