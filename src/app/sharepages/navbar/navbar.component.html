@@ -9,30 +9,32 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Compte</a>
           </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Transaction
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Versement</a></li>
-              <li><a class="dropdown-item" href="#">Retrait </a></li>
-              <li><a class="dropdown-item" href="#">Virement</a></li>
-            </ul>
-          </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Compte
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Mes comptes</a></li>
-              <li><a class="dropdown-item" href="#">Créer un compte </a></li>
+              <li><a class="dropdown-item" [routerLink]="['/comptelist']">Mes comptes</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/sign']">Créer un compte </a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Transaction
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" [routerLink]="['/transvers']">Versement</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/transretrait']">Retrait </a></li>
+              <li><a class="dropdown-item" [routerLink]="['/transvirement']">Virement</a></li>
             </ul>
           </li>
 
+          
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Deconnexion</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['']">Deconnexion</a>
           </li>
 
         </ul>

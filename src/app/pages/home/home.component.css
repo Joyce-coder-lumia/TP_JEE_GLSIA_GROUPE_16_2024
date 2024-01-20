@@ -1,0 +1,77 @@
+.back{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%), url('../../../assets/images/bqdix.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.navbar.bg-light {
+    background-color: transparent !important; 
+}
+
+.navbar-light .btn {
+    color: #ffffff; 
+    border-color: #fc9116; 
+}
+  
+  .navbar-light .btn:hover {
+    background-color: #fc9116; 
+    border-color: #fc9116; 
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+
+}
+
+.content .paragrph{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .buthom{
+    width: 160px;
+    height: 40px;
+    background: #fc9116;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .buthom a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.content .buthom:hover{
+    background-color: #c50786;
+}
+
+.content span{
+    color: #fc9116;
+    font-size: 60px;
+}
