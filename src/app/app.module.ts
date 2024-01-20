@@ -10,6 +10,7 @@ import { NavbarComponent } from './sharepages/navbar/navbar.component';
 import { TransversComponent } from './pages/transvers/transvers.component';
 import { TransretraitComponent } from './pages/transretrait/transretrait.component';
 import { TransvirementComponent } from './pages/transvirement/transvirement.component';
+import { ComptelistComponent } from './pages/comptelist/comptelist.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TransvirementComponent } from './pages/transvirement/transvirement.comp
     NavbarComponent,
     TransversComponent,
     TransretraitComponent,
-    TransvirementComponent
+    TransvirementComponent,
+    ComptelistComponent
   ],
   imports: [
     BrowserModule,
