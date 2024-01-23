@@ -26,18 +26,26 @@
     justify-content: space-between; 
     align-items: center;
     padding: 10px;
-    background-color: #fc9116;
-    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  .two-butt:hover {
-    background-color: #fc9116;
-  }
+  
   button{
     width: 48%;
+  }
+
+  .valider {
+    /* Styles spécifiques pour le bouton Valider */
+    background-color: #ffa500; /* Couleur orange pour Valider */
+    /* Autres styles pour Valider */
+  }
+  
+  .annuler {
+    /* Styles spécifiques pour le bouton Annuler */
+    background-color: #dddddd; /* Couleur grise pour Annuler */
+    /* Autres styles pour Annuler */
   }
   
   

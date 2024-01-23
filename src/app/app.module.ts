@@ -14,6 +14,8 @@ import { TransretraitComponent } from './pages/transretrait/transretrait.compone
 import { TransvirementComponent } from './pages/transvirement/transvirement.component';
 import { ComptelistComponent } from './pages/comptelist/comptelist.component';
 
+import { ComptelistserviceService } from './services/comptelistservice.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,7 @@ import { ComptelistComponent } from './pages/comptelist/comptelist.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ComptelistserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
