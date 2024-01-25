@@ -26,20 +26,26 @@
     justify-content: space-between; 
     align-items: center;
     padding: 10px;
-    background-color: #fc9116;
-    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  .two-butt:hover {
-    background-color: #fc9116;
-  }
   button{
     width: 48%;
   }
+
+  .valider {
+    
+    background-color: #ffa500; 
+    
+  }
   
+  .annuler {
+    
+    background-color: #dddddd; 
+    
+  }
   
   input,
   select {

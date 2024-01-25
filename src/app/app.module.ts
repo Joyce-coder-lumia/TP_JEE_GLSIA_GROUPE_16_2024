@@ -15,6 +15,11 @@ import { TransvirementComponent } from './pages/transvirement/transvirement.comp
 import { ComptelistComponent } from './pages/comptelist/comptelist.component';
 
 import { ComptelistserviceService } from './services/comptelistservice.service';
+import { DashbordComponent } from './backoffice/dashbord/dashbord.component';
+import { CreecpteComponent } from './pages/creecpte/creecpte.component';
+import { AdmihomeComponent } from './backoffice/admihome/admihome.component';
+import { AdmilistecpteComponent } from './backoffice/admilistecpte/admilistecpte.component';
+import { AdmitransacComponent } from './backoffice/admitransac/admitransac.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { ComptelistserviceService } from './services/comptelistservice.service';
     TransversComponent,
     TransretraitComponent,
     TransvirementComponent,
-    ComptelistComponent
+    ComptelistComponent,
+    DashbordComponent,
+    CreecpteComponent,
+    AdmihomeComponent,
+    AdmilistecpteComponent,
+    AdmitransacComponent
   ],
   imports: [
     BrowserModule,

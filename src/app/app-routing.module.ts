@@ -8,6 +8,8 @@ import { TransretraitComponent } from './pages/transretrait/transretrait.compone
 import { TransversComponent } from './pages/transvers/transvers.component';
 import { TransvirementComponent } from './pages/transvirement/transvirement.component';
 import { ComptelistComponent } from './pages/comptelist/comptelist.component';
+import { DashbordComponent } from './backoffice/dashbord/dashbord.component';
+import { CreecpteComponent } from './pages/creecpte/creecpte.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path:'transretrait',component:TransretraitComponent},
   {path:'transvers',component:TransversComponent},
   {path:'transvirement',component:TransvirementComponent},
-  {path:'comptelist',component:ComptelistComponent}
+  {path:'comptelist',component:ComptelistComponent},
+  {path:'dashbord',component:DashbordComponent},
+  {path:'creecpte',component:CreecpteComponent}
    
 ];
 

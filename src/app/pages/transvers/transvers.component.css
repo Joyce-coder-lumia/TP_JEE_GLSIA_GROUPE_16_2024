@@ -37,15 +37,15 @@
   }
 
   .valider {
-    /* Styles spécifiques pour le bouton Valider */
-    background-color: #ffa500; /* Couleur orange pour Valider */
-    /* Autres styles pour Valider */
+    
+    background-color: #ffa500; 
+    
   }
   
   .annuler {
-    /* Styles spécifiques pour le bouton Annuler */
-    background-color: #dddddd; /* Couleur grise pour Annuler */
-    /* Autres styles pour Annuler */
+    
+    background-color: #dddddd; 
+    
   }
   
   
