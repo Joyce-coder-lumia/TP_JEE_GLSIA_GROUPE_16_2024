@@ -1,67 +1,64 @@
 <div class="entete">
-    <form class="bank-form" (ngSubmit)="inscriptionUtilisateur(formData)">
+    <form class="bank-form" (ngSubmit)="onSubmit()">
         <h2>Créer un compte</h2>
         <div class="iner">
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required>
+          <label >Nom :</label>
+          <input type="text" [(ngModel)]="accountData.client.nom" name="nom" required>
         </div>
 
         <div class="iner">
-          <label for="prenom">Prénom :</label>
-          <input type="text" id="prenom" name="prenom" required>
+          <label >Prénom :</label> 
+          <input type="text" [(ngModel)]="accountData.client.prenom" name="prenom" required>
         </div>
 
         <div class="iner">
-          <label for="dateNaissance">Date de Naissance :</label>
-          <input type="date" id="dateNaissance" name="dateNaissance" required>
+          <label >Date de Naissance :</label>
+          <input type="date" [(ngModel)]="dateInput" name="dnaiss" required>
         </div>
 
         <div class="iner">
-          <label for="sexe">Sexe :</label>
-          <select id="sexe" name="sexe" required>
+          <label >Sexe :</label>
+          <select [(ngModel)]="accountData.client.sexe" name="sexe" required>
             <option value="homme">Homme</option>
             <option value="femme">Femme</option>
           </select>
         </div>
 
         <div class="iner">
-          <label for="adresse">adresse :</label>
-          <input type="text" id="adresse" name="adresse" required>
+          <label >adresse :</label>
+          <input type="text" [(ngModel)]="accountData.client.adresse" name="adresse" required>
         </div>
 
         <div class="iner">
-          <label for="tel">Tel :</label>
-          <input type="number" id="tel" name="tel" required>
+          <label >Tel :</label>
+          <input type="number" [(ngModel)]="accountData.client.tel" name="tel" required>
         </div>
 
         <div class="iner">
-          <label for="email">Courriel :</label>
-          <input type="email" id="email" name="email" required>
+          <label >Courriel :</label>
+          <input type="email" [(ngModel)]="accountData.client.courriel" name="courriel" required>
         </div>
 
         <div class="iner">
-          <label for="nationalite">Nationalite :</label>
-          <input type="text" id="nationalite" name="nationalite" required>
+          <label >Nationalite :</label>
+          <input type="text" [(ngModel)]="accountData.client.nationalite" name="nationalite" required>
         </div>
 
 
         <div>
-          <label for="typeCompte">Type de Compte :</label>
-          <select id="typeCompte" name="typeCompte" required>
+          <label >Type de Compte :</label>
+          <select [(ngModel)]="accountData.type_compe" name="type_compe" required>
             <option value="epargne">Compte Épargne</option>
             <option value="courant">Compte Courant</option>
           </select>
         </div>
 
         <div class="iner">
-          <label for="mot de passe">Mot de passe :</label>
-          <input type="password"  name="mot de passe" required>
+          <label >Mot de passe :</label>
+          <input type="password" [(ngModel)]="accountData.client.mot_de_passe" name="mot_de_passe" required>
         </div>
 
-        <div class="iner">
-          <label for="mot de passe">Confirmer mot de passe :</label>
-          <input type="password"  name="mot de passe" required>
-        </div>
+        
   
         <div class="center-button">
           <button type="submit">Valider</button>
