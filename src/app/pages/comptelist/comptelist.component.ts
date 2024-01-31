@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ComptelistserviceService } from 'src/app/services/comptelistservice.service';
+import { comptel, compteForm } from 'src/app/models/compte.model';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -9,15 +12,56 @@ import { ComptelistserviceService } from 'src/app/services/comptelistservice.ser
   styleUrls: ['./comptelist.component.css']
 })
 export class ComptelistComponent implements OnInit{
-  accounts: any[] = [];
+  comptes: comptel[] = [];
+  clientId: number =1;
+  //selectedAccount: compteForm | undefined;
 
-  constructor(private accountService: ComptelistserviceService) {}
+  
 
-  ngOnInit(): void {
-    this.accountService.getAccounts().subscribe(data => {
-      this.accounts = data;
-    });
+  showDetails(account: any) {
+    
   }
 
 
+  
+
+  
+
+  deleteAccount(account: any) {
+    
+  }
+
+  downloadData(account: any){
+
+  }
+
+  constructor(private accountService: ComptelistserviceService) {}
+
+  
+  
+
+    
+
+  ngOnInit(): void {
+    this.accountService.getComptesByClientId(this.clientId).subscribe(
+      (data) => {
+        this.comptes = data;
+      },
+      (error) => {
+        console.error('Erreur lors de la récupération des comptes', error);
+      }
+    );
+  }
+
+  
+  
+  
+
+  
+  
 }
+
+  
+
+
+

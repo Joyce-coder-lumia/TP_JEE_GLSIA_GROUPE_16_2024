@@ -75,3 +75,13 @@
     color: #fc9116;
     font-size: 60px;
 }
+
+.sideright{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    left: 690px;
+    
+      
+}

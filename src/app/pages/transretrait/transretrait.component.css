@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh; 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%), url('../../../assets/images/bqdouze.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%), url('../../../assets/images/plante.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     
@@ -16,14 +16,31 @@
     max-height: 400px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     overflow-y: auto;
-    background-color: #ffffff;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+    color: #fff;
+    
+  }
+
+  .image-container {
+    text-align: center; 
+    margin-bottom: 8px; 
+  }
+  
+  .image-container img{
+    
+    width: 5px !important;
+    height: auto;
   }
 
   
   h2 {
     text-align: center;
+    color: #fc9116;
   }
   
   .two-butt {
@@ -43,12 +60,14 @@
   .valider {
     
     background-color: #ffa500; 
+    font-weight: 700;
     
   }
   
   .annuler {
     
-    background-color: #dddddd; 
+    background-color: rgb(9, 91, 243); 
+    font-weight: 700;
     
   }
   
@@ -61,6 +80,20 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 3px;
+    outline: none;
+    
+  }
+
+  input{
+    background: transparent;
+    padding-left: 20px;
+    
+  }
+  
+  input:focus,
+  select:focus {
+    border: 1px solid #fc9116; 
+    outline: none; 
     
   }
   

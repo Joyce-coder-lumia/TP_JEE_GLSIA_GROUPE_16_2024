@@ -1,14 +1,18 @@
 <div class="entete-cpte">
-    <form class="bank-cpte">
+    <form class="bank-cpte" (ngSubmit)="onSubmit()">
+      <!--<div class="class=image-container">
+        <img src="../../../assets/images/logo.png">
+
+      </div>-->
         <h2>Créer un compte </h2>
         <div class="iner-retrait">
-          <label for="mail">Email :</label>
-          <input type="email"  name="mail" required>
+          <label for="courriel">Email :</label>
+          <input type="email" [(ngModel)]="creeData.client.courriel" name="courriel" required>
         </div>
 
         <div>
-            <label for="typeCompte">Type de Compte :</label>
-            <select id="typeCompte" name="typeCompte" required>
+            <label >Type de Compte :</label>
+            <select [(ngModel)]="creeData.type_compe" name="type_compe" required>
               <option value="epargne">Compte Épargne</option>
               <option value="courant">Compte Courant</option>
             </select>

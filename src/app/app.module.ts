@@ -21,6 +21,7 @@ import { CreecpteComponent } from './pages/creecpte/creecpte.component';
 import { AdmihomeComponent } from './backoffice/admihome/admihome.component';
 import { AdmilistecpteComponent } from './backoffice/admilistecpte/admilistecpte.component';
 import { AdmitransacComponent } from './backoffice/admitransac/admitransac.component';
+import { ModificformComponent } from './pages/modificform/modificform.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +38,15 @@ import { AdmitransacComponent } from './backoffice/admitransac/admitransac.compo
     CreecpteComponent,
     AdmihomeComponent,
     AdmilistecpteComponent,
-    AdmitransacComponent
+    AdmitransacComponent,
+    ModificformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [ComptelistserviceService],
   bootstrap: [AppComponent]

@@ -12,6 +12,7 @@ import { DashbordComponent } from './backoffice/dashbord/dashbord.component';
 import { CreecpteComponent } from './pages/creecpte/creecpte.component';
 
 const routes: Routes = [
+  
   {path:'',component:HomeComponent},
   {path:'sign',component:SignComponent},
   {path:'login',component:LoginComponent},
